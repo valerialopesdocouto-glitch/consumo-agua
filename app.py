@@ -1,12 +1,17 @@
 # Sistema de Classificação de Consumo de Água
+# Agenda 07 - Desenvolvimento de Sistemas I
 
 # Solicita o tipo de imóvel
-tipo_imovel = input("Digite o tipo de imóvel (comercial, casa ou apartamento): ").strip().lower()
+tipo_imovel = input(
+    "Digite o tipo de imóvel (comercial, casa ou apartamento): "
+).lower()
 
 # Solicita o consumo mensal de água
-consumo = float(input("Digite o consumo mensal de água (m³): "))
+consumo = float(
+    input("Digite o consumo mensal de água em m³: ")
+)
 
-# Classificação do consumo
+# Classifica o consumo de acordo com as regras da atividade
 if tipo_imovel == "comercial":
     print("Tarifa comercial aplicada – consulte o plano corporativo.")
 
